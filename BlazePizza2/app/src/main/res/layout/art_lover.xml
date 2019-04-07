@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/Lgrey">
+
+    <Button
+        android:id="@+id/buttonReview4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:onClick="back_Menu"
+        android:text="Back to Menu!" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="495dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="@color/Lgrey"
+                android:textSize="24sp"
+                android:text="$7.95"
+                android:textColor="@color/Black"
+                 />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="?attr/colorControlActivated"
+                android:text="Ingredients: artichokes, mozzarella, ricotta, chopped garlic, red sauce dollops. "
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="@color/Lgrey"
+                android:text="690 Calories per pizza, or 115 Calories per slice."
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/art_lover"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/buttonReview"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorAccent"
+                android:onClick="back_Menu"
+                android:text="Back to Menu!" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Art Lover"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

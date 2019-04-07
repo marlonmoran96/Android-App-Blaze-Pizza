@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/Lgrey">
+
+    <Button
+        android:id="@+id/buttonReview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:onClick="place_order"
+        android:text="Place Order!" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="465dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="@color/Lgrey"
+                android:text="Simple Pie: $5.00"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/sp_order"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="?attr/colorControlActivated"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/simple_pie" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="?attr/colorControlActivated"
+
+                android:text="Meat Eater: $7.95"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/me_order"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="@color/Lgrey"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/meat_eater" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="@color/Lgrey"
+                android:text="Art Lover: $7.95"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/al_order"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="?attr/colorControlActivated"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/art_lover"
+                android:onClick="Alove" />
+
+            <TextView
+                android:id="@+id/textVie11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="?attr/colorControlActivated"
+                android:text="Link In $7.95"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/li_order"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="@color/Lgrey"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/link_in"
+                android:onClick="Link" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/guest"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:text="Guest:"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentStart="true"
+        android:text="Look at our Menu Below and let us know what you would like to eat?"
+        android:textColor="@color/Black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Gnum"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/guest"
+        android:layout_toEndOf="@+id/guest"
+
+        android:textColor="@color/Black"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
